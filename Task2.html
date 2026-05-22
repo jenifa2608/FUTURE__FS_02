@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Client Lead Management System</title>
+  <link rel="stylesheet" href="task2.css">
+</head>
+
+<body>
+
+<div class="container">
+
+  <header>
+    <h1>Client Lead Management System</h1>
+
+    <p>
+      Professional dashboard to manage clients efficiently.
+    </p>
+  </header>
+
+  <div class="stats">
+
+    <div class="stat-card">
+      <h2 id="totalClients">0</h2>
+      <p>Total Clients</p>
+    </div>
+
+    <div class="stat-card">
+      <h2 id="activeClients">0</h2>
+      <p>Active Leads</p>
+    </div>
+
+  </div>
+
+  <div class="main-card">
+
+    <h2>Add New Client</h2>
+
+    <input type="text"
+    id="name"
+    placeholder="Client Name">
+
+    <input type="text"
+    id="phone"
+    placeholder="Phone Number">
+
+    <input type="email"
+    id="email"
+    placeholder="Email Address">
+
+    <input type="text"
+    id="company"
+    placeholder="Company Name">
+
+    <select id="status">
+      <option>New Lead</option>
+      <option>Pending</option>
+      <option>Completed</option>
+    </select>
+
+    <textarea
+    id="notes"
+    placeholder="Client Notes"></textarea>
+
+    <button onclick="addClient()">
+      Add Client
+    </button>
+
+  </div>
+
+  <div class="main-card">
+
+    <div class="search-box">
+
+      <input type="text"
+      id="search"
+      placeholder="Search Clients..."
+      onkeyup="searchClient()">
+
+    </div>
+
+    <h2>Client Records</h2>
+
+    <div id="clientList"></div>
+
+  </div>
+
+</div>
+
+<script src="task2.js"></script>
+
+</body>
+</html>
