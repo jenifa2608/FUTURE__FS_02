@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>KJ CRM Dashboard</title>
+
+<link rel="preconnect"
+href="https://fonts.googleapis.com">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+rel="stylesheet">
+
+<link rel="stylesheet"
+href="task2.css">
+
+</head>
+
+<body>
+
+<!-- LOGIN PAGE -->
+
+<div class="login-page">
+
+<div class="login-box">
+
+<h1>KJ CRM</h1>
+
+<p>
+Aesthetic Client Management Dashboard
+</p>
+
+<input type="email"
+placeholder="Enter Email">
+
+<input type="password"
+placeholder="Enter Password">
+
+<button onclick="showDashboard()">
+Login
+</button>
+
+</div>
+
+</div>
+
+<!-- DASHBOARD -->
+
+<div class="dashboard"
+id="dashboard">
+
+<!-- TOPBAR -->
+
+<div class="topbar">
+
+<h1 class="logo">
+KJ CRM
+</h1>
+
+<button class="location-btn">
+📍 Chennai, India
+</button>
+
+</div>
+
+<!-- HERO SECTION -->
+
+<div class="hero-section">
+
+<div class="hero-text">
+
+<h2>
+Manage Client Records Efficiently
+</h2>
+
+<p>
+Modern CRM dashboard to track projects,
+analytics, meetings and customer records
+with aesthetic Gen Z UI design.
+</p>
+
+<button>
+Explore Dashboard
+</button>
+
+</div>
+
+<div class="hero-image">
+
+<img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=1200&auto=format&fit=crop">
+
+</div>
+
+</div>
+
+<!-- STATS -->
+
+<div class="stats-section">
+
+<div class="stat-card">
+
+<h3>250+</h3>
+
+<p>Clients</p>
+
+</div>
+
+<div class="stat-card">
+
+<h3>120+</h3>
+
+<p>Projects</p>
+
+</div>
+
+<div class="stat-card">
+
+<h3>98%</h3>
+
+<p>Success Rate</p>
+
+</div>
+
+<div class="stat-card">
+
+<h3>24/7</h3>
+
+<p>Support</p>
+
+</div>
+
+</div>
+
+<!-- CLIENT RECORDS -->
+
+<div class="client-section">
+
+<h2>
+Client Records
+</h2>
+
+<input type="text"
+id="clientName"
+placeholder="Client Name">
+
+<input type="text"
+id="clientProject"
+placeholder="Project Name">
+
+<button onclick="addClient()">
+Add Client
+</button>
+
+<table>
+
+<thead>
+
+<tr>
+
+<th>Client</th>
+<th>Project</th>
+<th>Status</th>
+
+</tr>
+
+</thead>
+
+<tbody id="clientTable">
+
+</tbody>
+
+</table>
+
+</div>
+
+<!-- ANALYTICS -->
+
+<div class="analytics">
+
+<h2>
+Analytics Overview
+</h2>
+
+<div class="analytics-grid">
+
+<div class="analytics-card">
+
+<h3>85%</h3>
+
+<p>Customer Satisfaction</p>
+
+</div>
+
+<div class="analytics-card">
+
+<h3>92%</h3>
+
+<p>Task Completion</p>
+
+</div>
+
+<div class="analytics-card">
+
+<h3>40+</h3>
+
+<p>Meetings Weekly</p>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- GRAPH -->
+
+<div class="analytics">
+
+<h2>
+Performance Graph
+</h2>
+
+<div class="graph-container">
+
+<div class="graph-card">
+
+<div class="bar bar1">
+<span>80%</span>
+</div>
+
+<div class="bar bar2">
+<span>65%</span>
+</div>
+
+<div class="bar bar3">
+<span>95%</span>
+</div>
+
+<div class="bar bar4">
+<span>75%</span>
+</div>
+
+<div class="bar bar5">
+<span>90%</span>
+</div>
+
+</div>
+
+<div class="graph-labels">
+
+<p>Clients</p>
+<p>Projects</p>
+<p>Growth</p>
+<p>Meetings</p>
+<p>Revenue</p>
+
+</div>
+
+</div>
+
+</div>
+
+<footer>
+
+Designed with 🌙 by KJ Solutions
+
+</footer>
+
+</div>
+
+<script src="task2.js"></script>
+
+</body>
+
+</html>
